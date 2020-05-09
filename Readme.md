@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Федор Пирулин](https://up.htmlacademy.ru/adaptive/19/user/1066059).
-* Наставник: Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
+  Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
