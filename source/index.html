@@ -2,11 +2,112 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
+    <header class="page-header container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="CAT Energy">
+        </a>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">подбор программы</a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="first-card__wrapper">
+        <div class="first-card container">
+          <h2 class="first-card__title">Функциональное питание для котов</h2>
+          <p class="first-card__paragraph">Занялся собой? Займись котом!</p>
+          <img class="first-card__image" src="img/index-can-mobile@1x.png" width="280" height="270">
+          <a class="first-card__button button button--green button--shape" href="#">подобрать программу</a>
+        </div>
+      </div>
+      <section class="program container">
+        <h2 class="visually-hidden">Программы</h2>
+        <ul class="program__list ">
+          <li class="program__item program__item--slim">
+            <h3 class="program__title">похудение</h3>
+            <p class="program__paragraph program__paragraph--first">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="program__catalog" href="#">Каталог Slim &rarr;</a>
+          </li>
+          <li class="program__item program__item--pro">
+            <h3 class="program__title">набор массы</h3>
+            <p class="program__paragraph program__paragraph--second">Заработать авторитет среди дворовых котов и&nbsp;даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="program__catalog" href="#">Каталог Pro &rarr;</a>
+          </li>
+        </ul>
+      </section>
+      <section class="description container">
+      <h2 class="description__title">Как это работает</h2>
+      <ul class="description__list">
+        <li class="description__item description__item--leaf">
+          <p class="description__paragraph">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="description__item description__item--powder">
+          <p class="description__paragraph">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </li>
+        <li class="description__item  description__item--dining">
+          <p class="description__paragraph">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        </li>
+        <li class="description__item description__item--clock">
+          <p class="description__paragraph">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        </li>
+      </ul>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <h2 class="page-footer__logo"><span class="visually-hidden">Подвал сайта</span></h2>
+        <img src="../img/footer-logo-svg.svg" alt="CAT Energy Logo" class="page-footer__image"  width="128"  height="24">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
+            </li>
+          </ul>
+        </div>
+        <a class="page-footer__feedback" href="https://htmlacademy.ru/intensive/adaptive">
+        <span>HTML Academy</span>
+        </a>
+      </div>
+    </footer>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <script>
+      var navMain = document.querySelector(".main-nav");
+      var navToggle = document.querySelector(".main-nav__toggle");
 
+      navMain.classList.remove("main-nav--nojs");
+
+      navToggle.addEventListener("click", function() {
+        if (navMain.classList.contains("main-nav--closed")) {
+          navMain.classList.remove("main-nav--closed");
+          navMain.classList.add("main-nav--opened");
+        }
+        else {
+          navMain.classList.add("main-nav--closed");
+          navMain.classList.remove("main-nav--opened");
+        }
+      });
+    </script>
   </body>
 </html>
